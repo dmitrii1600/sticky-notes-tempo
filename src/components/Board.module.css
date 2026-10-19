@@ -1,0 +1,31 @@
+.board {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  background-color: var(--surface);
+  background-image:
+    linear-gradient(var(--surface-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--surface-line) 1px, transparent 1px);
+  background-size: 32px 32px;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.draft {
+  position: absolute;
+  border: 1px dashed var(--accent);
+  border-radius: 3px;
+  background: rgba(59, 110, 240, 0.08);
+  pointer-events: none;
+}
+
+.hint {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  color: var(--ink-soft);
+  font-size: 15px;
+  pointer-events: none;
+}
