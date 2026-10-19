@@ -1,0 +1,62 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: var(--toolbar-height);
+  padding: 0 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #dadfe8;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.colors {
+  display: flex;
+  gap: 6px;
+}
+
+.swatch {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 1px solid rgba(35, 40, 52, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.swatch:hover {
+  transform: scale(1.1);
+}
+
+.swatch[data-color='amber'] {
+  background: var(--note-amber);
+}
+
+.swatch[data-color='rose'] {
+  background: var(--note-rose);
+}
+
+.swatch[data-color='mint'] {
+  background: var(--note-mint);
+}
+
+.swatch[data-color='sky'] {
+  background: var(--note-sky);
+}
+
+.swatch[aria-pressed='true'] {
+  border-color: var(--ink);
+  box-shadow: 0 0 0 2px rgba(35, 40, 52, 0.12);
+}
+
+.hint {
+  margin: 0 0 0 auto;
+  color: var(--ink-soft);
+  font-size: 12px;
+}
