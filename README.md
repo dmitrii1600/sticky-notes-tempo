@@ -13,7 +13,8 @@ npm install
 npm run dev
 ```
 
-The dev server prints a local URL (http://localhost:5173 by default).
+The dev server prints a local URL (http://localhost:5173/stiky-notes-tempo/
+by default - the path prefix matches where the app is published).
 
 To produce a production build and serve it locally:
 
